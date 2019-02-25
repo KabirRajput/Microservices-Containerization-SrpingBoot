@@ -2,6 +2,10 @@ package com.fdm.MovieApp.Models;
 
 public class CatalogItem {
 
+	public CatalogItem() {
+
+	}
+
 	private String name;
 	private String desc;
 	private int rating;

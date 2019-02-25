@@ -7,12 +7,13 @@ import org.springframework.web.bind.annotation.RestController;
 import com.fdm.MovieApp.Models.Movie;
 
 @RestController
-@RequestMapping
+@RequestMapping("/movie")
 public class MovieResource {
 
 	@RequestMapping("/{movieId}")
 	public Movie getMovieInfo(@PathVariable("movieId") String movieId) {
-		return new Movie(movieId, "testName");
+		System.out.println("movieResurceID"+ movieId);
+		 return new Movie(movieId, "Name for ID " + movieId);
 		
 	}
 }
